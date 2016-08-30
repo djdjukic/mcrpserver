@@ -135,37 +135,37 @@ menubar = Menu(top)
 top.config(menu=menubar)
 
 filemenu = Menu(menubar, tearoff=0)
-menubar.add_cascade(label='Fajl', menu=filemenu, underline=0)
-filemenu.add_command(label='Zatvori', command=top.quit)
+menubar.add_cascade(label='File', menu=filemenu, underline=0)
+filemenu.add_command(label='Exit', command=top.quit)
 
 helpmenu = Menu(menubar, tearoff=0)
-menubar.add_cascade(label='Pomoć', menu=helpmenu, underline=0)
-helpmenu.add_command(label='O programu', command=about)
+menubar.add_cascade(label='Help', menu=helpmenu, underline=0)
+helpmenu.add_command(label='About', command=about)
 
 
-receive_frame = LabelFrame(top, text="Primanje")
+receive_frame = LabelFrame(top, text="Transfer")
 receive_frame.grid(column=0, row=0, padx=5, pady=5, sticky=N + S + E + W)
 
 port_chooser = Combobox(receive_frame, state='readonly', values=com_ports)
 port_chooser.set(com_ports[0])
 port_chooser.grid(column=1, row=0, sticky=E + W, padx=5, pady=5)
 
-Label(receive_frame, text='Komunikacioni port').grid(column=0, row=0, sticky=E)
+Label(receive_frame, text='Communication port').grid(column=0, row=0, sticky=E)
 
-r_button = Button(receive_frame, text='Primi podatke', command=receive_cb)
+r_button = Button(receive_frame, text='Retrieve data', command=receive_cb)
 r_button.grid(column=2, row=0, padx=5, pady=5)
 
 
-data_frame = LabelFrame(top, text="Lični podaci")
+data_frame = LabelFrame(top, text="Personal data")
 data_frame.grid(column=0, row=1, padx=5, pady=5, sticky=N + S + E + W)
 
 
 sex_frame = Frame(data_frame)
 sex_frame.grid(column=0, row=0, columnspan=4)
 
-Label(sex_frame, text='Pol').grid(column=0, row=0)
+Label(sex_frame, text='Sex').grid(column=0, row=0)
 sex = IntVar()
-Radiobutton(sex_frame, text="Ž", variable=sex, value=2).grid(column=1, row=0)
+Radiobutton(sex_frame, text="F", variable=sex, value=2).grid(column=1, row=0)
 Radiobutton(sex_frame, text="M", variable=sex, value=3).grid(column=2, row=0)
 
 
@@ -185,7 +185,7 @@ date_of_birth = labeled_entry(data_frame, 'Date of birth', 0, 4)
 custom_1 = labeled_entry(data_frame, 'Custom info 1', 2, 4)
 custom_2 = labeled_entry(data_frame, 'Custom info 2', 0, 5)
 custom_3 = labeled_entry(data_frame, 'Custom info 3', 2, 5)
-custom_3.insert(0, date.today().strftime('%Y-&m-&d'))
+custom_3.insert(0, date.today().strftime('%Y-%m-%d'))
 
 
 def sedimentation_cb():
