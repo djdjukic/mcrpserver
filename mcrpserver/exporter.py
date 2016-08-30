@@ -45,7 +45,7 @@ class PDF(FPDF):
             self.cell(50, 8, 'Sex: M', 1, 0)
         else:
             self.cell(50, 8, 'Sex: F', 1, 0)
-        self.cell(90, 8, 'SS number: ' + data['jmbg'], 1, 0)
+        self.cell(90, 8, 'SS number: ' + data['ssn'], 1, 0)
         self.cell(0, 8, 'Custom info 1: ' + data['custom_1'], 1, 1)
         self.cell(50, 8, 'Tel.: ' + data['phone_no'], 1, 0)
         self.cell(90, 8, 'E-mail: ' + data['email_address'], 1, 0)

@@ -1,20 +1,20 @@
 ﻿title;;;;;
-labels;ANALIZA;REZULTAT;REFERENTNE VREDNOSTI;JEDINICA;
-sedimentation;SEDIMENTACIJA;< 20;< 15;mm/h;0
-title;KRVNA SLIKA;;;;
-wbc;LEUKOCITI;3,5 - 10,0;3,5 - 10,0;10⁹/L;1
-rbc;ERITROCITI;3,80 - 5,20;4,20 - 5,80;10¹²/L;2
+labels;ANALYSIS;RESULT;REFERENCE VALUES;UNIT;
+sedimentation;SEDIMENTATION;< 20;< 15;mm/h;0
+title;BLOOD ANALYSIS;;;;
+wbc;WHITE BLOOD CELLS;3,5 - 10,0;3,5 - 10,0;10⁹/L;1
+rbc;RED BLOOD CELLS;3,80 - 5,20;4,20 - 5,80;10¹²/L;2
 hgb;HEMOGLOBIN;120 - 160;130 - 180;g/L;0
-hct;HEMATOKRIT;0,350 - 0,470;0,400 - 0,530;L/L;3
+hct;HEMATOCRIT;0,350 - 0,470;0,400 - 0,530;L/L;3
 mcv;MCV;80,0 - 97,0;80,0 - 97,0;fL;1
 mch;MCH;26,5 - 33,5;26,5 - 33,5;pg;1
 mchc;MCHC;315 - 360;315 - 360;g/L;0
 rdw;RDW;10,0 - 15,0;10,0 - 15,0;%;1
-plt;TROMBOCITI;150 - 440;150 - 440;10⁹/L;0
+plt;PLATELETS;150 - 440;150 - 440;10⁹/L;0
 mpv;MPV;6,5 - 11,0;6,5 - 11,0;fL;1
-title;LEUKOCITARNA FORMULA;;;;
-lym_percent;LIMFOCITI;17,0 - 48,0;17,0 - 48,0;%;1
-mon_percent;MONOCITI;4,0 - 10,0;4,0 - 10,0;%;1
-gra_percent;GRANULOCITI;43,0 - 76,0;43,0 - 76,0;%;1
+title;LEUKOCYTE FORMULA;;;;
+lym_percent;LYMPHOCYTES;17,0 - 48,0;17,0 - 48,0;%;1
+mon_percent;MONOCYTES;4,0 - 10,0;4,0 - 10,0;%;1
+gra_percent;GRANULOCYTES;43,0 - 76,0;43,0 - 76,0;%;1
 title;;;;;
 crp;CRP;< 5;< 5;mg/L;1
