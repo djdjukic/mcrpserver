@@ -1,5 +1,7 @@
 # MCRP server
 
+![Screenshot](../../raw/master/screenshot.png)
+
 A free and open-source program for receiving hematology data from HORIBA Microsemi CRP machines and generating PDF reports.
 
 The program connects to the analyzer using an RS-232 serial connection.
